@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>O2Drops</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body style="background-color: blueviolet;">
+    
+    <div class="main-Shop">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">O2Drops</h2>
+            </div>
+
+            <div class="menu">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#00008e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li class="hideOnMobile"><a href="services.html">Services</a></li>
+                    <li class="hideOnMobile"><a href="contacts.html">Contacts</a></li>
+                    <li class="hideOnMobile"><a href="shop.html">Shop</a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00008e"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+
+                <script>
+                    function showSidebar(){
+                        const sidebar = document.querySelector('.sidebar')
+                        sidebar.style.display  = 'flex'
+                    }
+                    function hideSidebar(){
+                     const sidebar = document.querySelector('.sidebar')
+                        sidebar.style.display  = 'none'   
+                    }
+
+                </script>
+                
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="shop-container">
+        <h1>Our Awesome Products</h1>
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="1000236718-removebg-preview.png" alt="500ml" width="200" height="250">
+                <h3 class="product-name">Kiddies 300ml</h3>
+                <p class="product-price">P3.00</p>
+                <button class="add-to-cart-btn" data-product-id="1" data-product-name="Stylish T-Shirt" data-product-price="25.00">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="1000236048-removebg-preview (1).png" alt="5L" width="200" height="250">
+                <h3 class="product-name">500ml</h3>
+                <p class="product-price">P4.00</p>
+                <button class="add-to-cart-btn" data-product-id="2" data-product-name="Wireless Headphones" data-product-price="79.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="1000236053-removebg-preview.png" alt="500ml" width="200" height="300">
+                <h3 class="product-name">500ml </h3>
+                <p class="product-price">P4.00</p>
+                <button class="add-to-cart-btn" data-product-id="3" data-product-name="500ML" data-product-price="199.00">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="1000237157-removebg-preview.png" alt="500ml" width="200" height="300">
+                <h3 class="product-name">1.5l</h3>
+                <p class="product-price">P7.00</p>
+                <button class="add-to-cart-btn" data-product-id="4" data-product-name="1.5L" data-product-price="35.50">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="5L.jpg" alt="5L" width="200" height="250">
+                <h3 class="product-name">5L</h3>
+                <p class="product-price">P12.00</p>
+                <button class="add-to-cart-btn" data-product-id="5" data-product-name="5L" data-product-price="49.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="1000236719-removebg-preview.png" alt="5L" width="200" height="250">
+                <h3 class="product-name">10L</h3>
+                <p class="product-price">P65.00</p>
+                <button class="add-to-cart-btn" data-product-id="6" data-product-name="10L" data-product-price="65.00">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="1000237096-removebg-preview.png" alt="5L" width="200" height="250">
+                <h3 class="product-name">1.5L 6Pack</h3>
+                <p class="product-price">P65.00</p>
+                <button class="add-to-cart-btn" data-product-id="2" data-product-name="1.5L" data-product-price="79.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="500ml12p.jpg" alt="5L" width="300" height="300">
+                <h3 class="product-name">500ml 12Pack</h3>
+                <p class="product-price">P48.00</p>
+                <button class="add-to-cart-btn" data-product-id="2" data-product-name="500ML" data-product-price="79.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="500ml.jpg" alt="5L" width="300" height="250">
+                <h3 class="product-name">500ml 24Pack</h3>
+                <p class="product-price">P84.00</p>
+                <button class="add-to-cart-btn" data-product-id="2" data-product-name="500ML" data-product-price="79.99">Add to Cart</button>
+            </div>
+
+           <div class="product-card">
+                <img src="300.6.jpg" alt="5L" width="300" height="400">
+                <h3 class="product-name">300ml 6 pack</h3>
+                <p class="product-price">P18.00</p>
+                <button class="add-to-cart-btn" data-product-id="2" data-product-name="300ML" data-product-price="79.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="1000236728-removebg-preview.png" alt="5L" width="300" height="300">
+                <h3 class="product-name">500ml 24pack</h3>
+                <p class="product-price">P84.00</p>
+                <button class="add-to-cart-btn" data-product-id="2" data-product-name="500ML" data-product-price="79.99">Add to Cart</button>
+            </div>
+ 
+
+
+        </div>
+    </div>
+
+
+    <!------Footer----->
+
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+        </div>
+
+        <div class="us">
+            <p>Business Name: <br>O2Drops Still Water Bottled by <br> Flavoured Water Purifiers (Pty) Ltd</p>
+            <p>Managing Director: <br>Chadiwa Edwin </p>
+            <a href="#"><i class="fas fa-phone"></i>+267 72771639 <br>+267 73839748</a>
+            <a href="#"><br><i class="fas fa-envelope"></i>o2drops04@gmail.com</a>
+            <a href="#"><br><i class="fas fa-map-marker-alt"></i>P O Box 2070,Mahalapye <br>Kimberly Mall, corner <br>House Complex,Mahalapye <br>(opposite Central Police)</a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contacts</a>    
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            O2Drops @ 2024
+        </p>
+
+        <button class="cnt"><a href="#">CONTACT US</a></button>
+    </section>
+
+    </script>
+    </body>
+    </html>
